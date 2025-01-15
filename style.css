@@ -289,7 +289,7 @@ html {
 .partners-content {
     width: 100%;
     max-width: 1350px;
-    padding-top: 8rem;
+    padding-top: 3rem;
     margin: 0 auto;
     position: relative;
 }
@@ -515,11 +515,13 @@ html {
 
 .content-section h2 {
     margin-bottom: 1rem;
+    text-align: center;
 }
 
 .content-section p {
     margin-bottom: 3rem;
     font-size: 1.2em;
+    text-align: center;
 }
 
 .cards-container {
@@ -670,6 +672,73 @@ html {
 
     font-size: 1.5em;
 
+}
+
+.button-container {
+    width: 301px;
+    padding: 20px 30px;
+    position: relative;
+    display: block;
+    text-decoration: none;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.button-container:hover .button-wave {
+    top: -120px;
+}
+
+.button-text {
+    position: relative;
+    z-index: 1;
+    color: white;
+    font-size: 16px;
+    letter-spacing: 4px;
+}
+
+.button-wave {
+    width: 351px;
+    height: 200px;
+    background-color: var(--blue-one);
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 0;
+    top: -80px;
+    transition: 0.4s;
+}
+
+.button-wave::before,
+.button-wave::after {
+    width: 200%;
+    height: 200%;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -75%);
+}
+
+.button-wave::before {
+    border-radius: 45%;
+    background-color: rgba(20, 20, 20, 1);
+    animation: wave-animation 5s linear infinite;
+}
+
+.button-wave::after {
+    border-radius: 40%;
+    background-color: rgba(20, 20, 20, 0.5);
+    animation: wave-animation 10s linear infinite;
+}
+
+@keyframes wave-animation {
+    0% {
+        transform: translate(-50%, -75%) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(-50%, -75%) rotate(360deg);
+    }
 }
 
 /* CASE STUDY ONE */
