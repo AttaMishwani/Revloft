@@ -6,7 +6,7 @@
 
 body,
 html {
-    height: 500vh;
+    height: 600vh;
     background-color: var(--dull-white);
 }
 
@@ -599,6 +599,80 @@ html {
 }
 
 /* CTA BUTTON SECTION */
+
+/* CASE STUDY ONE */
+
+.case-one-container {
+    width: 100%;
+    background-color: black;
+}
+
+.case-one-content {
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 3rem 0;
+    color: white;
+
+}
+
+.case-one-visible {
+    padding: 20px;
+    border: 2px solid var(--blue-one);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.case-one-visile-right {
+    width: 50%;
+}
+
+.case-one-visile-left img {
+    /* width: 100%; */
+    width: 300px;
+    border-radius: 10px;
+}
+
+.case-one-visible-left {
+    width: 50%;
+}
+
+.case-one-visible .business {
+    background-color: var(--blue-one);
+    width: fit-content;
+    padding: 8px 17px;
+    border-radius: 10px;
+}
+
+.case-one-visible .heading {
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.case-one-visible p {
+    margin: 1rem 0;
+}
+
+
+.case-one-visible ul {
+    margin-left: 2rem;
+}
+
+.case-one-visible ul li {
+    margin: 10px 0;
+}
+
+.case-one-visible ul li::marker {
+    color: var(--blue-one);
+
+    font-size: 1.5em;
+
+}
+
+/* CASE STUDY ONE */
 
 
 /* Responsive Design */
