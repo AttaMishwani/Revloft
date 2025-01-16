@@ -5,7 +5,7 @@ let closeCase = document.getElementsByClassName("close-icon");
 
 
 const HandleCaseOpen = (index) => {
-    // console.log("hello paksitam")
+
     if (index === 1) {
         caseOneUnvisible.classList.add("active")
     } else if (index === 2) {
@@ -14,15 +14,19 @@ const HandleCaseOpen = (index) => {
     else if (index === 3) {
         casethreeUnvisible.classList.add("active")
     }
-    // console.log("hello world")
+
 }
 
-Array.from(closeCase).forEach(element => {
-    element.addEventListener("click", () => {
-        console.log("Close button clicked");
-        parentElement.classList.remove("active");
-    });
-});
+const handleCloseCase = (index) => {
+    if (index === 1) {
+        caseOneUnvisible.classList.remove("active")
+    } else if (index === 2) {
+        casetwoUnvisible.classList.remove("active")
+    } else if (index === 3) {
+        casethreeUnvisible.classList.remove("active")
+    }
+}
+
 
 
 
