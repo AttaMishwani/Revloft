@@ -6,7 +6,7 @@
 
 body,
 html {
-    height: 600vh;
+    /* height: 600vh; */
     background-color: var(--dull-white);
 }
 
@@ -615,6 +615,7 @@ html {
     margin: 0 auto;
     padding: 3rem 0;
     color: white;
+    position: relative;
 
 }
 
@@ -642,7 +643,14 @@ html {
     width: 50%;
 }
 
-.case-one-visible .business {
+/* .case-one-visible .business {
+    background-color: var(--blue-one);
+    width: fit-content;
+    padding: 8px 17px;
+    border-radius: 10px;
+} */
+
+.business {
     background-color: var(--blue-one);
     width: fit-content;
     padding: 8px 17px;
@@ -741,7 +749,355 @@ html {
     }
 }
 
+/* CASE ONE UNVISIBLE */
+
+.case-one-unvisible {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, .5);
+
+    display: none;
+}
+
+.case-one-unvisible.active {
+    display: block;
+}
+
+.visible-content {
+    width: 100%;
+    max-width: 1300px;
+    min-height: 10vh;
+    max-height: 83vh;
+    background-color: var(--blue-one);
+    color: var(--dull-white);
+    overflow-x: auto;
+    margin: 0 auto;
+    margin-top: 4rem;
+    transform: translateX(-8px);
+    border-radius: 10px;
+    padding: 2rem;
+
+}
+
+.visible-content .para {
+    margin: 2rem 0;
+}
+
+
+.visible-content ul {
+    margin-left: 2rem;
+}
+
+.visible-content ul .para {
+    margin: 10px 0;
+}
+
+
+
+/* CASE ONE UNVISIBLE */
+
+.close-icon {
+    background-color: var(--blue-one);
+    /* padding: 10px; */
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-items: center;
+    position: absolute;
+    top: 1%;
+    right: 3%;
+}
+
+.fa-solid {
+    color: white;
+    background-color: var(--blue-one);
+}
+
 /* CASE STUDY ONE */
+
+
+
+/* CASE Three STUDY */
+/* CASE Three STUDY */
+
+
+
+.case-three-container {
+    width: 100%;
+    background-color: black;
+}
+
+.case-three-content {
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 3rem 0;
+    color: white;
+    position: relative;
+
+}
+
+.case-three-visible {
+    padding: 20px;
+    border: 2px solid var(--blue-one);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+
+
+.case-three-visible-left img {
+
+    width: 300px;
+    border-radius: 10px;
+
+}
+
+
+
+.case-three-visible .business {
+    background-color: var(--blue-one);
+    width: fit-content;
+    padding: 8px 17px;
+    border-radius: 10px;
+}
+
+.case-three-visible .heading {
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.case-three-visible p {
+    margin: 1rem 0;
+}
+
+
+.case-three-visible ul {
+    margin-left: 2rem;
+}
+
+.case-three-visible ul li {
+    margin: 10px 0;
+}
+
+.case-three-visible ul li::marker {
+    color: var(--blue-one);
+    font-size: 1.5em;
+}
+
+
+
+/* CASE THREE UNVISIBLE */
+
+.case-three-unvisible {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, .5);
+
+    display: none;
+}
+
+.case-three-unvisible.active {
+    display: block;
+}
+
+.visible-content {
+    width: 100%;
+    max-width: 1300px;
+    min-height: 10vh;
+    max-height: 83vh;
+    background-color: var(--blue-one);
+
+    overflow-x: auto;
+    margin: 0 auto;
+    margin-top: 4rem;
+    transform: translateX(-8px);
+    border-radius: 10px;
+    padding: 2rem;
+
+}
+
+
+
+/* CASE THREE UNVISIBLE */
+
+
+
+
+/* CASE THREE STUDY */
+/* CASE THREE STUDY */
+
+
+
+
+/* CASE TWO STUDY */
+
+.case-two-container {
+    width: 100%;
+    background-color: black;
+}
+
+.case-two-content {
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 3rem 0;
+    color: white;
+    position: relative;
+
+}
+
+.case-two-visible {
+    padding: 20px;
+    border: 2px solid var(--blue-one);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+
+
+.case-two-visible-left img {
+
+    width: 300px;
+    border-radius: 10px;
+
+}
+
+
+
+.case-two-visible .business {
+    background-color: var(--blue-one);
+    width: fit-content;
+    padding: 8px 17px;
+    border-radius: 10px;
+}
+
+.case-two-visible .heading {
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.case-two-visible p {
+    margin: 1rem 0;
+}
+
+
+.case-two-visible ul {
+    margin-left: 2rem;
+}
+
+.case-two-visible ul li {
+    margin: 10px 0;
+}
+
+.case-two-visible ul li::marker {
+    color: var(--blue-one);
+    font-size: 1.5em;
+}
+
+
+
+/* CASE THREE UNVISIBLE */
+
+.case-two-unvisible {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, .5);
+
+    display: none;
+}
+
+.case-two-unvisible.active {
+    display: block;
+}
+
+.visible-content {
+    width: 100%;
+    max-width: 1300px;
+    min-height: 10vh;
+    max-height: 83vh;
+    background-color: rgb(37, 37, 37);
+
+    overflow-x: auto;
+    margin: 0 auto;
+    margin-top: 4rem;
+    transform: translateX(-8px);
+    border-radius: 10px;
+    padding: 2rem;
+
+}
+
+/* CASE TWO STUDY */
+
+
+
+
+/* case study */
+
+.before-after {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4rem 0;
+    gap: 1rem;
+}
+
+.before {
+    background-color: var(--dull-white);
+    color: black;
+    padding: 1rem 0;
+    border-radius: 10px;
+
+}
+
+.after {
+    background-color: var(--blue-one);
+    padding: 1rem 0;
+    border-radius: 10px;
+    color: white;
+}
+
+.compare-headings {
+    font-size: 30px;
+    text-align: center;
+
+}
+
+/* .before .para {
+    text-align: center;
+    font-size: 3rem;
+} */
+
+
+
+/* case study */
+
+
+
+
+
+
+
 
 
 /* Responsive Design */
@@ -767,7 +1123,7 @@ html {
 }
 
 
-/* BRANDS SLIDER */
+
 
 
 

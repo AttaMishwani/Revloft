@@ -7,6 +7,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
     <!-- Google Fonts poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -124,11 +126,6 @@
 
         <section class="partners">
             <div class="partners-content">
-                <!-- <h2 class="heading"><span class="blue-text">We</span> Worked with the World <span
-                        class="blue-text">'s</span> Largest <span class="blue-text">Brands</span></h2> -->
-
-
-
                 <!-- Left Slider -->
                 <section class="brand-section">
                     <div class="brand-slider-left">
@@ -454,7 +451,9 @@
             </div>
         </section>
 
+        <!-- CASE ONE -->
         <section class="case-one-container">
+
             <div class="case-one-content">
                 <div class="case-one-visible">
                     <div class="case-one-visile-left">
@@ -487,22 +486,249 @@
                                 untapped.</li>
                         </ul>
 
-                        <a href="javascript:void(0)" class="button-container">
+                        <a onclick="HandleCaseOpen(1)" href="javascript:void(0)" class="button-container">
                             <span class="button-text para">Read Full Case Study</span>
                             <div class="button-wave"></div>
                         </a>
 
                     </div>
                 </div>
-                <div class="case-one-unvisible"></div>
+
+                <div id="case-one-unvisible" class="case-one-unvisible">
+                    <div class="close-icon"><i class="fa-solid fa-x"></i></div>
+                    <div class="visible-content">
+                        <div class="business para">
+                            Industry-Known Calisthenics Coach
+                        </div>
+                        <h2 class="heading">From Underperforming Emails to a Thriving High-Ticket Coaching Machine</h2>
+                        <p class="para">
+                            When Matt partnered with RevLoft, his email marketing and lead-generation systems were
+                            struggling to keep up with his business goals. We revived his dead email list, optimized his
+                            funnels, and helped him double his monthly recurring revenue in just 30 days.
+                        </p>
+                        <p class="para"><strong class="blue-text">Problem: </strong>Before working with RevLoft, Matt
+                            faced multiple
+                            challenges:</p>
+
+                        <ul>
+                            <li class="para">His email list of 12,000 contacts had been neglected for months, with low
+                                open
+                                (25-35%) and
+                                click rates (0.2-0.3%).</li>
+                            <li class="para">Poor email deliverability meant most emails landed in the spam or
+                                promotions
+                                folder.</li>
+                            <li class="para">His lead-generation funnels lacked optimization, leaving high-ticket
+                                coaching
+                                leads
+                                untapped.</li>
+                        </ul>
+
+                        <p class="para"><strong class="blue-text">Solution: </strong>We implemented a multi-faceted
+                            strategy for Matt:
+                        </p>
+
+                        <ul>
+                            <li class="para"><strong>List Revival Strategy.</strong> Re-engaged his email list using
+                                personalized,
+                                high-value campaigns that turned dormant subscribers into active participants.
+                            </li>
+                            <li class="para"><strong>Email Deliverability Optimization.</strong> Cleaned his list,
+                                authenticated his
+                                domain, and improved sender reputation to ensure emails landed in the primary inbox.
+                            </li>
+                            <li class="para"><strong>Consistent Email Campaigns.</strong> Sent 3x per week, delivering
+                                engaging content
+                                and irresistible offers.
+                            </li>
+                            <li class="para"><strong>High-Converting Funnel Page.</strong> Wrote and built a
+                                call-booking funnel that
+                                booked 40-50 calls with just a few hundred visitors.
+                            </li>
+                        </ul>
+
+                        <p class="para"><strong class="blue-text">Results: </strong>The solution we implemented created
+                            a massive impact
+                            on Matt’s business:</p>
+
+                        <ul>
+                            <li class="para">MRR doubled in just 30 days.</li>
+                            <li class="para">Email performance skyrocketed to 55-75% open rates and 0.7-1.5% click
+                                rates.</li>
+                            <li class="para">The call-booking funnel generated so many leads that Matt had to create a
+                                waitlist for new clients.</li>
+                        </ul>
+                        <div class="before-after">
+                            <div class="before">
+                                <p class="para compare-headings">Before RevLoft</p>
+                                <ul>
+                                    <li class="para">A disengaged email list with low opens and clicks.</li>
+                                    <li class="para">Emails landing in spam or promotions folders.</li>
+                                    <li class="para">Funnels that failed to convert visitors into high-ticket coaching
+                                        leads.</li>
+                                </ul>
+                            </div>
+                            <div class="compare-arrow">
+                                <img src="assets/images/download.png" alt="">
+                            </div>
+                            <div class="after">
+                                <p class="para compare-headings">After RevLoft</p>
+                                <ul>
+                                    <li class="para">A thriving email list with industry-leading engagement rates.</li>
+                                    <li class="para">Emails landing in the primary inbox consistently.</li>
+                                    <li class="para">An optimized call-booking funnel that drove an overflow of
+                                        qualified leads.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
             </div>
         </section>
+        <!-- CASE ONE -->
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- CASE TWO -->
+        <section class="case-two-container">
+
+            <div class="case-two-content">
+                <div class="case-two-visible">
+                    <div class="case-two-visible-right">
+                        <div class="business para">
+                            Industry-Known Calisthenics Coach
+                        </div>
+                        <h2 class="heading">From Underperforming Emails to a Thriving High-Ticket Coaching Machine</h2>
+                        <p class="para">
+                            When Matt partnered with RevLoft, his email marketing and lead-generation systems were
+                            struggling to keep up with his business goals. We revived his dead email list, optimized his
+                            funnels, and helped him double his monthly recurring revenue in just 30 days.
+                        </p>
+                        <p class="para"><strong>Problem: </strong>Before working with RevLoft, Matt faced multiple
+                            challenges:</p>
+
+                        <ul>
+                            <li class="para">His email list of 12,000 contacts had been neglected for months, with low
+                                open
+                                (25-35%) and
+                                click rates (0.2-0.3%).</li>
+                            <li class="para">Poor email deliverability meant most emails landed in the spam or
+                                promotions
+                                folder.</li>
+                            <li class="para">His lead-generation funnels lacked optimization, leaving high-ticket
+                                coaching
+                                leads
+                                untapped.</li>
+                        </ul>
+
+                        <a onclick="HandleCaseOpen(2)" href="javascript:void(0)" class="button-container">
+                            <span class="button-text para">Read Full Case Study</span>
+                            <div class="button-wave"></div>
+                        </a>
+
+                    </div>
+                    <div class="case-two-visible-left">
+                        <img src="assets/images/case-study (1).jpg" alt="">
+                    </div>
+
+
+
+
+
+                </div>
+
+                <div id="case-two-unvisible" class="case-two-unvisible">
+                    <div class="close-icon"><i class="fa-solid fa-x"></i></div>
+                    <div class="visible-content">
+                        <h1 class="heading">case two</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- CASE TWO -->
+
+
+
+
+
+
+        <!-- CASE THREE -->
+        <section class="case-three-container">
+
+            <div class="case-three-content">
+                <div class="case-three-visible">
+                    <div class="case-three-visible-left">
+                        <img src="assets/images/case-study (1).jpg" alt="">
+                    </div>
+                    <div class="case-three-visible-right">
+                        <div class="business para">
+                            Industry-Known Calisthenics Coach
+                        </div>
+                        <h2 class="heading">From Underperforming Emails to a Thriving High-Ticket Coaching Machine</h2>
+                        <p class="para">
+                            When Matt partnered with RevLoft, his email marketing and lead-generation systems were
+                            struggling to keep up with his business goals. We revived his dead email list, optimized his
+                            funnels, and helped him double his monthly recurring revenue in just 30 days.
+                        </p>
+                        <p class="para"><strong>Problem: </strong>Before working with RevLoft, Matt faced multiple
+                            challenges:</p>
+
+                        <ul>
+                            <li class="para">His email list of 12,000 contacts had been neglected for months, with low
+                                open
+                                (25-35%) and
+                                click rates (0.2-0.3%).</li>
+                            <li class="para">Poor email deliverability meant most emails landed in the spam or
+                                promotions
+                                folder.</li>
+                            <li class="para">His lead-generation funnels lacked optimization, leaving high-ticket
+                                coaching
+                                leads
+                                untapped.</li>
+                        </ul>
+
+                        <a onclick="HandleCaseOpen(3)" href="javascript:void(0)" class="button-container">
+                            <span class="button-text para">Read Full Case Study</span>
+                            <div class="button-wave"></div>
+                        </a>
+
+                    </div>
+
+
+
+
+                </div>
+
+                <div id="case-three-unvisible" class="case-three-unvisible">
+                    <div class="close-icon"><i class="fa-solid fa-x"></i></div>
+                    <div class="visible-content">
+                        <h1 class="heading">case three</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- CASE THREE -->
 
     </main>
 
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <script src="script.js"></script>
 </body>
 
