@@ -198,6 +198,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .home-content .home-right {
@@ -550,10 +551,14 @@ html {
     text-align: center;
 }
 
+.main-section-subheading {
+    text-align: center;
+}
+
 .content-section p {
     margin-bottom: 3rem;
     font-size: 1.2em;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .cards-container {
@@ -612,6 +617,7 @@ html {
     max-width: 1300px;
     padding: 3rem 0;
     width: 100%;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1120,10 +1126,26 @@ html {
 
 }
 
-/* .before .para {
-    text-align: center;
-    font-size: 3rem;
-} */
+.outer-before-after {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 1rem;
+    margin-top: -0.5rem;
+    border: 2px solid var(--blue-one);
+    border-top: 0px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+}
+
+.outer-before ul,
+.outer-after ul {
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+
 
 
 
