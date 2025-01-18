@@ -6,40 +6,42 @@
 
 body,
 html {
-    /* height: 600vh; */
+
     background-color: var(--dull-white);
 }
 
-/* Universal Scrollbar Styling */
+
 * {
     scrollbar-width: thin;
-    /* For Firefox */
+
     scrollbar-color: #00A4C8 #1a1a1a;
-    /* Scrollbar color and background */
+
 }
 
-/* For WebKit browsers (Chrome, Edge, Safari) */
+
 *::-webkit-scrollbar {
     width: 10px;
-    /* Width of the scrollbar */
+
 }
 
 *::-webkit-scrollbar-track {
     background-color: #1a1a1a;
-    /* Background color of the scrollbar track */
+
 }
 
 *::-webkit-scrollbar-thumb {
     background-color: #00A4C8;
-    /* Color of the scrollbar thumb */
-    border-radius: 5px;
-    /* Rounded corners for the thumb */
+    border: 2px solid #1a1a1a;
+
 }
 
 *::-webkit-scrollbar-thumb:hover {
     background-color: #008bb0;
-    /* Slightly darker color on hover */
+
+    border: 2px solid #1a1a1a;
+
 }
+
 
 
 .home-bg {
@@ -208,7 +210,7 @@ html {
 
 .home-content .home-left {
     width: 50%;
-    margin-top: -3rem;
+    /* margin-top: -3rem; */
 }
 
 
@@ -223,8 +225,62 @@ html {
 
 
 
+.home-testimonial {
+    background-color: var(--dull-white);
+    width: 100%;
+    min-height: 3rem;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    border-radius: 10px;
+    gap: 2rem;
+    border: 2px solid var(--blue-one);
+}
+
+.home-testimonial .test-img .image {
+    width: 82px;
+    height: 82px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid var(--blue-one);
+
+}
+
+.home-testimonial .test-img .image img {
+    width: 100%;
+}
 
 
+.home-testimonial .text-content {
+    color: black;
+    font-size: 15px;
+}
+
+.name-and-stars {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.name-and-stars .para {
+    color: black;
+    font-size: 15px;
+    font-size: 500;
+}
+
+.stars {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    margin-top: -1.5rem;
+}
+
+.stars img {
+    width: 20px;
+}
 
 /* HOME SECTION */
 
@@ -407,7 +463,7 @@ html {
 
 
 /* TESTIMONIALS */
-.testimonials {
+/* .testimonials {
     width: 100%;
     background-color: var(--dull-white);
     display: flex;
@@ -438,7 +494,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* border: 2px solid green; */
+  
 }
 
 .testimonials-content .content .reviews-right {
@@ -450,7 +506,7 @@ html {
 }
 
 .testimonials-content .content .reviews-left .heading {
-    /* font-size: 3rem; */
+
     text-transform: uppercase;
 }
 
@@ -462,14 +518,14 @@ html {
 .swiper-slide {
     display: flex;
     flex-direction: column;
-    /* Ensures vertical stacking */
+
     align-items: center;
     justify-content: space-between;
-    /* Optional */
+
     border-radius: 18px;
     position: relative;
     gap: 2rem;
-    /* Vertical space between children (.review-text and .client) */
+
     padding: 20px;
     border: 2px solid var(--blue-one);
     background-color: var(--dull-white);
@@ -496,7 +552,7 @@ html {
     align-items: center;
     gap: 1rem;
     margin-top: 20px;
-    /* Horizontal spacing between client image and name */
+
 }
 
 .swiper-slide .client .client-info .client-image {
@@ -509,7 +565,7 @@ html {
 .swiper-slide .client .client-info .client-image img {
     width: 100%;
     height: 100%;
-    /* Ensures the image covers the container */
+
     object-fit: cover;
 }
 
@@ -529,12 +585,13 @@ html {
     font-size: 14px;
 }
 
-/* TESTIMONIALS */
+
+TESTIMONIALS */
 
 /* FIFTH SECTION */
 
 .main-section {
-    padding: 10px 0;
+    padding: 4rem 0 2rem 0;
     display: flex;
     justify-content: center;
     align-items: center;
