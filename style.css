@@ -1153,39 +1153,6 @@ html {
 
 
 
-
-
-
-
-
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .brand-section h1 {
-        font-size: 1.5rem;
-    }
-
-    .brand-items-left img,
-    .brand-items-right img {
-        width: 80px;
-        /* Smaller images on mobile */
-        margin: 0 10px;
-    }
-
-    .card h3 {
-        font-size: 1.25rem;
-    }
-
-    .card p {
-        font-size: 0.9rem;
-    }
-}
-
-
-
-
-
-
 @media (max-width:1024px) {
     .home-right {
         display: none;
@@ -1242,10 +1209,10 @@ html {
 
 
     .content-section {
-
         width: 100%;
         padding: 0 20px;
         padding-top: 3rem;
+        padding-bottom: 3rem;
     }
 
     .home-button {
@@ -1254,11 +1221,79 @@ html {
 
     }
 
+    .case-one-content {
 
+        padding: 3rem 20px;
+
+    }
+
+    .case-two-content {
+
+        padding: 3rem 20px;
+
+    }
+
+    .case-three-content {
+
+        padding: 3rem 20px;
+
+    }
+
+    .cta-btn .cta-content {
+
+        padding: 3rem 20px;
+
+    }
+
+    div#case-one-unvisible {
+        padding: 0 20px;
+    }
+
+    .visible-content {
+
+        transform: translateX(0px);
+
+    }
+
+    .compare-headings {
+        font-size: 24px;
+
+    }
+
+    .before ul .para,
+    .after ul .para {
+
+        font-size: 14px;
+
+    }
+
+    h2.heading {
+        font-size: 33px;
+        line-height: 44px;
+    }
 
 }
 
 @media (max-width:768px) {
+    .brand-section h1 {
+        font-size: 1.5rem;
+    }
+
+    .brand-items-left img,
+    .brand-items-right img {
+        width: 80px;
+        /* Smaller images on mobile */
+        margin: 0 10px;
+    }
+
+    .card h3 {
+        font-size: 1.25rem;
+    }
+
+    .card p {
+        font-size: 0.9rem;
+    }
+
     .heading {
         font-size: 2.5rem;
         line-height: 3.1rem;
@@ -1287,6 +1322,133 @@ html {
         width: 65%;
 
     }
+
+    .case-one-visible {
+
+        flex-direction: column;
+
+    }
+
+    .case-two-visible {
+        flex-direction: column;
+    }
+
+    .case-three-visible {
+        flex-direction: column;
+    }
+
+    .outer-before-after {
+
+        flex-direction: column;
+
+    }
+
+    .case-one-visile-left,
+    .case-two-visible-left,
+    .case-three-visible-left {
+        width: 100%;
+    }
+
+    .case-one-visile-left img,
+    .case-two-visible-left img,
+    .case-three-visible-left img {
+        width: 100%;
+        height: 218px;
+        object-fit: cover;
+    }
+
+    .case-two-visible-right {
+        order: 2;
+    }
+
+
+    .case-two-visible-left {
+
+        order: 1;
+    }
+
+    .compare-arrow img {
+        width: 210px;
+    }
+
+    .outer-before-after {
+
+        gap: 4rem;
+
+    }
+
+    .outer-before.before {
+        order: 3;
+
+        width: 100%;
+    }
+
+    .compare-arrow {
+        transform: rotate(285deg);
+        order: 2;
+        margin: 3rem 2px;
+    }
+
+    .outer-after.after {
+        order: 1;
+        width: 100%;
+    }
+
+    .cta-btn .cta-content a p {
+
+
+        font-size: 12px;
+
+    }
+
+    .cta-btn .cta-content a {
+        width: 100%;
+        margin: 0 auto;
+
+    }
+
+    .home-button span {
+
+
+        font-size: 16px;
+
+    }
+
+    .before-after {
+
+        justify-content: center;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .before-after .before {
+        order: 3;
+    }
+
+    .before-after .compare-arrow {
+        order: 2;
+    }
+
+    .before-after .compare-arrow {
+        transform: rotate(285deg);
+        order: 2;
+        margin: 3rem 2px;
+    }
+
+    .before-after .compare-arrow img {
+        width: 142px;
+    }
+
+    .visible-content .para {
+        margin: 1rem 0;
+    }
+
+    .case-one-unvisible,
+    .case-two-unvisible,
+    .case-three-unvisible {
+        padding: 0 20px;
+    }
+
 }
 
 @media (max-width:577px) {
@@ -1311,6 +1473,10 @@ html {
     .testimonials-content .content .reviews-left .heading {
         white-space: pre-wrap;
     }
+
+    .content-section .card img {
+        width: 50px;
+    }
 }
 
 @media (max-width:480px) {
@@ -1330,13 +1496,13 @@ html {
 
     }
 
-    .home-button span {
+    /* .home-button span {
         position: relative;
         z-index: 1;
         color: white;
         font-size: 12px;
         letter-spacing: 2px;
-    }
+    } */
 
 
 
@@ -1368,6 +1534,70 @@ html {
     .content-section p {
 
         font-size: 15px;
+    }
+
+    .business {
+        font-size: 12px !important;
+        padding: 8px 10px;
+    }
+
+    .button-container {
+        width: 229px;
+        padding: 10px 15px;
+
+    }
+
+    .button-container .button-text {
+        font-size: 12px;
+    }
+
+    .button-wave {
+        width: 229px;
+
+    }
+
+    .case-one-visible,
+    .case-two-visible,
+    .case-three-visible {
+        padding: 20px 6px;
+
+    }
+
+    .case-one-visible .heading,
+    .case-two-visible .heading,
+    .case-three-visible .heading {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    h2.heading {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .visible-content .para {
+
+        font-size: 14px;
+    }
+
+    .before-after .compare-headings {
+        font-size: 20px;
+    }
+
+    .visible-content {
+        padding: 2rem 11px;
+    }
+
+    .visible-content ul {
+        margin-left: 24px;
+    }
+
+    .compare-arrow img {
+        width: 145px;
+    }
+
+    .outer-before-after {
+        gap: 2rem;
     }
 }
 
