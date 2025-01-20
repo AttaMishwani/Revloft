@@ -1293,7 +1293,40 @@ TESTIMONIALS */
     flex-direction: column;
 }
 
+.last-cta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--dull-white);
+}
+
+.last-cta h2 {
+    margin-bottom: 3rem;
+}
+
 /* LAST CARD SECTION */
+
+/* FOOTER */
+
+footer {
+    width: 100%;
+    background-color: black;
+    border-top: 2px solid var(--blue-one);
+}
+
+.footer-content {
+    max-width: 1300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--dull-white);
+    padding: 1rem 0;
+    margin: 0 auto;
+}
+
+/* FOOTER */
 
 
 @media (max-width:1024px) {
