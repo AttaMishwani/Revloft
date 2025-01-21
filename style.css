@@ -1370,6 +1370,12 @@ TESTIMONIALS */
 
 }
 
+.last-card-content .cta-btn a {
+    background-color: black !important;
+    z-index: 2;
+    position: relative;
+}
+
 .last-card-content h2 {
     color: var(--dull-white);
     text-align: center;
