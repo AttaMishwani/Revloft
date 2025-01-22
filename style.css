@@ -723,7 +723,7 @@ TESTIMONIALS */
 
 .case-one-container {
     width: 100%;
-    background-color: black;
+    background-color: var(--dull-white);
 }
 
 .case-one-content {
@@ -731,6 +731,7 @@ TESTIMONIALS */
     width: 100%;
     margin: 0 auto;
     padding: 1rem 0;
+    padding-top: 4rem;
     color: white;
     position: relative;
 
@@ -743,7 +744,16 @@ TESTIMONIALS */
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 2;
     gap: 1.5rem;
+    background-color: black;
+    position: relative;
+}
+
+.case-one-content>.outer-before-after,
+.case-two-content>.outer-before-after,
+.case-three-content>.outer-before-after {
+    background-color: black;
 }
 
 .case-one-visile-right {
@@ -760,12 +770,7 @@ TESTIMONIALS */
     width: 50%;
 }
 
-/* .case-one-visible .business {
-    background-color: var(--blue-one);
-    width: fit-content;
-    padding: 8px 17px;
-    border-radius: 10px;
-} */
+
 
 .business {
     background-color: var(--blue-one);
@@ -951,7 +956,7 @@ TESTIMONIALS */
 
 .case-three-container {
     width: 100%;
-    background-color: black;
+    background-color: var(--dull-white);
 }
 
 .case-three-content {
@@ -961,6 +966,7 @@ TESTIMONIALS */
     padding: 1rem 0;
     color: white;
     position: relative;
+    padding-bottom: 4rem;
 
 }
 
@@ -970,8 +976,11 @@ TESTIMONIALS */
     border-radius: 10px;
     display: flex;
     justify-content: center;
+    position: relative;
+    z-index: 2;
     align-items: center;
     gap: 1.5rem;
+    background-color: black;
 }
 
 
@@ -1068,7 +1077,7 @@ TESTIMONIALS */
 
 .case-two-container {
     width: 100%;
-    background-color: black;
+    background-color: var(--dull-white);
 }
 
 .case-two-content {
@@ -1076,6 +1085,7 @@ TESTIMONIALS */
     width: 100%;
     margin: 0 auto;
     padding: 1rem 0;
+
     color: white;
     position: relative;
 
@@ -1089,6 +1099,9 @@ TESTIMONIALS */
     justify-content: center;
     align-items: center;
     gap: 1.5rem;
+    background-color: black;
+    position: relative;
+    z-index: 2;
 }
 
 
@@ -1212,13 +1225,16 @@ TESTIMONIALS */
     gap: 2rem;
     padding: 2rem 1rem;
     padding-top: 3rem;
+    z-index: 1;
+    position: relative;
     margin-top: -0.5rem;
     border: 2px solid var(--blue-one);
     border-top: 0px;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
-
 }
+
+
 
 .outer-before ul,
 .outer-after ul {
@@ -1346,6 +1362,7 @@ TESTIMONIALS */
     background-size: cover;
     background-position: center;
     position: relative;
+    padding-top: 3rem;
 }
 
 .last-card-section-bg {
@@ -1469,9 +1486,85 @@ TESTIMONIALS */
 
 .last-cta h2 {
     margin-bottom: 3rem;
+    text-align: center;
 }
 
 /* LAST CARD SECTION */
+
+
+/* FOUR TESTIMONIALS SECTION */
+.four-testimonials-section {
+    width: 100%;
+    background-color: black;
+}
+
+.four-test-content {
+    width: 100%;
+    max-width: 1300px;
+    padding: 3rem 0;
+    margin: 0 auto;
+}
+
+.test-card-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+
+}
+
+.test-heading,
+.test-para {
+    color: var(--dull-white);
+    text-align: center;
+}
+
+.test-para {
+    margin: 1rem 0;
+
+}
+
+.test-card-container .test-card {
+    background-color: var(--dull-white);
+    border-radius: 10px;
+    padding: 20px;
+    width: 47%;
+    border: 2px solid var(--blue-one);
+    color: black !important;
+    box-shadow: 0 0 10px rgba(148, 221, 224, 0.5);
+    transition: 0.5s ease;
+}
+
+.test-card-container .test-card:hover {
+    box-shadow: none;
+    background-color: white;
+}
+
+.test-card .profile {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    /* border: 2px solid green; */
+    margin-bottom: 2rem;
+}
+
+.test-card .profile .profile-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid var(--blue-one);
+}
+
+.test-card .profile .profile-image img {
+    width: 100%;
+}
+
+/* FOUR TESTIMONIALS SECTION */
 
 /* FOOTER */
 
@@ -1488,7 +1581,7 @@ footer {
     justify-content: center;
     align-items: center;
     color: var(--dull-white);
-    padding: 1rem 0;
+    padding: 2rem 0;
     margin: 0 auto;
 }
 
