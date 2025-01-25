@@ -352,30 +352,30 @@ html {
 .loops-slide-left img,
 .loops-slide-right img {
     width: 180px;
-    margin: 20px 0;
+    margin: 20px 20px;
 }
 
 @keyframes slide-vertical {
     from {
         transform: translateX(0);
-        /* Start at the top */
+
     }
 
     to {
         transform: translateX(-100%);
-        /* Slide up by one full height */
+
     }
 }
 
 @keyframes slide-vertical-toBotttom {
     from {
         transform: translateX(-100%);
-        /* Start at the top */
+
     }
 
     to {
         transform: translateX(0);
-        /* Slide up by one full height */
+
     }
 }
 
