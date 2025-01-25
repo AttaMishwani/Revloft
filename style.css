@@ -439,7 +439,7 @@ html {
 
 .brand-items-left img,
 .brand-items-right img {
-    height: 50px;
+    /* height: 50px; */
     width: 130px;
     margin: 0 20px;
     transition: transform 0.3s ease;
@@ -673,7 +673,7 @@ TESTIMONIALS */
 }
 
 .card p {
-    font-size: 1.2em;
+    font-size: 1em;
     font-family: var(--jakarta-sans);
     color: #666;
     line-height: 1.5;
@@ -717,6 +717,18 @@ TESTIMONIALS */
 /* CTA BUTTON SECTION */
 
 /* CASE STUDY ONE */
+
+.brand-logo {
+    display: grid;
+    place-items: center;
+
+}
+
+.brand-logo img {
+    width: 200px;
+    min-width: 50px;
+
+}
 
 .case-one-container {
     width: 100%;
@@ -892,10 +904,11 @@ TESTIMONIALS */
     max-width: 1300px;
     min-height: 10vh;
     max-height: 83vh;
-    background-color: var(--blue-one);
+
     background-image: url(assets/images/New-bg-image.png);
-    background-size: contain;
+    background-size: cover;
     background-position: top;
+    background-repeat: no-repeat;
     color: var(--dull-white);
     overflow-x: auto;
     margin: 0 auto;
@@ -1956,9 +1969,16 @@ footer {
 
     .name-and-stars {
 
-        justify-content: space-between;
+        justify-content: center;
+        flex-direction: column;
+        gap: 1rem !important;
+    }
 
-        gap: 7rem;
+    .test-text {
+
+
+        align-items: center;
+
     }
 
     .test-card-container .test-card {
@@ -1967,11 +1987,15 @@ footer {
 
     }
 
-    .last-card-section {
+    .case-two-content {
+        padding: 0rem 20px;
+    }
 
-        padding: 10px 20px;
+    .brand-logo {
+        margin-bottom: 20px;
 
     }
+
 
 }
 
@@ -2011,6 +2035,20 @@ footer {
     .name-and-stars {
 
         gap: 0rem;
+    }
+
+    .three-card .three-text-content {
+        padding: 14px 15px 15px 15px;
+    }
+
+    .last-card-content {
+        padding: 3rem 10px;
+    }
+
+    .three-card img {
+
+        height: 190px;
+
     }
 }
 
@@ -2145,9 +2183,8 @@ footer {
     }
 
     .name-and-stars {
-
         flex-direction: column;
-        gap: 1rem;
+        gap: 0rem;
     }
 
     .name-and-stars .para {
@@ -2168,11 +2205,27 @@ footer {
         width: 100%;
 
     }
+
+    .four-test-content {
+        padding: 3rem 20px;
+    }
+
+    .three-card .three-text-content .three-card-desc {
+        font-size: 14px;
+    }
+
+    .case-one-content {
+        padding: 3rem 20px 1rem 20px;
+    }
+
+    .case-three-content {
+        padding: 1rem 20px 3rem 20px;
+    }
 }
 
 @media (max-width:320px) {
     .para {
-        font-size: 15px;
+        font-size: 14px;
     }
 
     .heading {
