@@ -212,24 +212,18 @@ html {
     z-index: 99;
     display: flex;
     overflow: hidden;
-    /* box-shadow: 0 0 10px var(--blue-one); */
-    /* border-radius: 50%; */
+
     flex-direction: column;
     position: relative;
 
 }
 
-/* .home-content .home-right img {
-    width: 55vw;
-    transform: translateX(10%);
-
-
-} */
 
 .home-content .home-left {
     width: 50%;
     /* margin-top: -3rem; */
 }
+
 
 
 .home-content .home-left .heading {
@@ -239,7 +233,9 @@ html {
 
 
 
-
+.home-content .home-left>p.para {
+    margin-bottom: 10px;
+}
 
 .home-testimonial {
     background-color: var(--dull-white);
@@ -1435,19 +1431,20 @@ TESTIMONIALS */
     object-fit: cover;
 }
 
-
 .three-card .three-text-content {
-    padding: 1rem;
+    padding: 14px 40px 40px 40px;
 }
 
-.three-card h3.para,
-.two-card h3.para {
+.three-card .three-text-content .three-card-desc {
+    font-size: 17px;
+}
+
+.three-card h3.para {
     font-size: 30px;
-    margin-bottom: 1rem;
+    margin: 1rem 0;
 }
 
-.three-card .para,
-.two-card .para {
+.three-card .para {
     line-height: 30px;
 }
 
@@ -1531,7 +1528,7 @@ TESTIMONIALS */
 .test-card-container .test-card {
     background-color: var(--dull-white);
     border-radius: 10px;
-    padding: 20px;
+    padding: 40px;
     width: 47%;
     border: 2px solid var(--blue-one);
     color: black !important;
@@ -1546,11 +1543,18 @@ TESTIMONIALS */
 
 .test-card .profile {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     gap: 1rem;
     /* border: 2px solid green; */
     margin-bottom: 2rem;
+}
+
+.test-card .profile .profile-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 .test-card .profile .profile-image {
@@ -1559,6 +1563,25 @@ TESTIMONIALS */
     border-radius: 50%;
     overflow: hidden;
     border: 2px solid var(--blue-one);
+}
+
+.test-card .profile .profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.test-card .profile .profile-stars {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-top: 5px;
+}
+
+.test-card .profile .profile-stars img {
+    width: 20px;
 }
 
 .test-card .profile .profile-image img {
@@ -1591,7 +1614,7 @@ footer {
 
 @media (max-width:1024px) {
     .home-right {
-        display: none;
+        display: none !important;
     }
 
     .home-content {
@@ -1717,6 +1740,24 @@ footer {
     .three-card {
 
         width: 100%;
+
+    }
+
+    .home-testimonial {
+
+        width: 68%;
+
+    }
+
+    .four-test-content {
+
+        padding: 3rem 5px;
+
+    }
+
+    .last-card-section {
+
+        padding: 50px 20px;
 
     }
 
@@ -1897,6 +1938,41 @@ footer {
         padding: 0 20px;
     }
 
+    .four-test-content {
+        padding: 3rem 15px;
+    }
+
+    .test-card-container .test-card {
+
+        padding: 18px;
+
+    }
+
+    .home-testimonial {
+        width: 71%;
+        margin: 0 auto;
+        flex-direction: column;
+    }
+
+    .name-and-stars {
+
+        justify-content: space-between;
+
+        gap: 7rem;
+    }
+
+    .test-card-container .test-card {
+
+        width: 100%;
+
+    }
+
+    .last-card-section {
+
+        padding: 10px 20px;
+
+    }
+
 }
 
 @media (max-width:577px) {
@@ -1930,6 +2006,11 @@ footer {
 
         width: 100%;
 
+    }
+
+    .name-and-stars {
+
+        gap: 0rem;
     }
 }
 
@@ -2077,6 +2158,15 @@ footer {
     .two-card h3.para {
         font-size: 20px;
         margin-bottom: 1rem;
+    }
+
+    .name-and-stars {
+        margin: 0 auto;
+    }
+
+    .home-testimonial {
+        width: 100%;
+
     }
 }
 
