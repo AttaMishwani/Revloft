@@ -1645,6 +1645,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex: wrap;
     gap: 20px;
     margin-bottom: 1rem;
 }
@@ -2273,6 +2274,16 @@ footer {
 
     .case-three-content {
         padding: 1rem 10px 3rem 10px;
+    }
+
+    .footer-content .footer-social-links .social-link {
+        width: 50px;
+        height: 50px;
+
+    }
+
+    .footer-content .footer-social-links .social-link i {
+        font-size: 20px;
     }
 }
 
