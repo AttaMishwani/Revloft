@@ -11,12 +11,6 @@ html {
 }
 
 
-/* * {
-    scrollbar-width: thin;
-
-    scrollbar-color: #00A4C8 #1a1a1a;
-
-} */
 
 
 *::-webkit-scrollbar {
@@ -200,7 +194,7 @@ html {
     width: 100%;
     background-color: #000;
     color: white;
-    /* border: 2px solid red; */
+
 }
 
 .home-content {
@@ -349,7 +343,7 @@ html {
     animation: slide-vertical 50s linear infinite;
     display: flex;
     flex-direction: row;
-    /* Stack items vertically */
+
     align-items: center;
 }
 
@@ -357,7 +351,7 @@ html {
     animation: slide-vertical-toBotttom 50s linear infinite;
     display: flex;
     flex-direction: row;
-    /* Stack items vertically */
+
     align-items: center;
 }
 
@@ -450,7 +444,7 @@ html {
 
 .brand-items-left img,
 .brand-items-right img {
-    /* height: 50px; */
+
     width: 130px;
     margin: 0 20px;
     transition: transform 0.3s ease;
@@ -459,7 +453,7 @@ html {
 .brand-items-left img:hover,
 .brand-items-right img:hover {
     transform: scale(1.1);
-    /* Subtle zoom effect on hover */
+
 }
 
 .brand-items-left {
@@ -644,7 +638,7 @@ TESTIMONIALS */
 .content-section p {
     margin-bottom: 3rem;
     font-size: 1.2em;
-    /* text-align: center; */
+
 }
 
 .cards-container {
@@ -781,7 +775,7 @@ TESTIMONIALS */
 }
 
 .case-one-visile-left img {
-    /* width: 100%; */
+
     width: 300px;
     border-radius: 10px;
 }
@@ -819,7 +813,6 @@ TESTIMONIALS */
 
 .case-one-visible ul li::marker {
     color: var(--blue-one);
-
     font-size: 1.5em;
 
 }
@@ -915,7 +908,6 @@ TESTIMONIALS */
     max-width: 1300px;
     min-height: 10vh;
     max-height: 83vh;
-
     background-image: url(assets/images/New-bg-image.png);
     background-size: cover;
     background-position: top;
@@ -949,7 +941,6 @@ TESTIMONIALS */
 
 .close-icon {
     background-color: var(--blue-one);
-    /* padding: 10px; */
     border-radius: 50%;
     width: 40px;
     height: 40px;
@@ -1283,7 +1274,7 @@ TESTIMONIALS */
     height: 500px;
     min-width: 249px;
     border-radius: 10px;
-    /* z-index: 2; */
+
 
 
 }
@@ -1295,7 +1286,7 @@ TESTIMONIALS */
     margin: 0 auto;
     position: relative;
     margin-bottom: -1rem;
-    /* z-index: 99999; */
+
     font-size: 15px !important;
     background-color: var(--blue-one);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -1341,7 +1332,7 @@ TESTIMONIALS */
 
 
 .compare-long::-webkit-scrollbar-track {
-    /* background: #f1f1f1; */
+
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 
@@ -1435,10 +1426,8 @@ TESTIMONIALS */
 .three-card {
     border: 2px solid var(--blue-one);
     width: 30%;
-
     z-index: 2;
     position: relative;
-
     background-color: rgba(0, 0, 0, 0.6);
     min-height: 60vh;
     color: var(--dull-white);
@@ -1475,10 +1464,6 @@ TESTIMONIALS */
     line-height: 30px;
 }
 
-/* 
-.three-card:nth-child(2) h3.para {
-    margin-top: -3.5rem;
-} */
 
 .two-cards-container {
     width: 100%;
@@ -1578,7 +1563,7 @@ TESTIMONIALS */
     justify-content: space-between;
     align-items: center;
     gap: 1rem;
-    /* border: 2px solid green; */
+
     margin-bottom: 2rem;
 }
 
