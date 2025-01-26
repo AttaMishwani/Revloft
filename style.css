@@ -155,7 +155,10 @@ html {
 
 .para {
     font-family: "Plus Jakarta Sans", serif;
-    font-size: 1.125rem;
+    font-size: 16px;
+    line-height: 24px;
+
+
 }
 
 /* UNIVERSAL STYLES */
@@ -205,6 +208,11 @@ html {
 
 }
 
+.home-content .home-left p {
+    font-family: var(--jakarta-sans) !important;
+    font-size: 16px;
+    line-height: 24px;
+}
 
 
 .home-content .home-right {
@@ -234,7 +242,7 @@ html {
 
 
 .home-content .home-left>p.para {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .home-testimonial {
@@ -273,29 +281,28 @@ html {
 }
 
 
-.home-testimonial .text-content {
-    color: black;
-    font-size: 15px;
+.home-testimonial .text-content p {
+    color: #666666;
+
+
 }
 
 .name-and-stars {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 9rem;
+    color: #666666;
+    gap: 6rem;
 }
 
-.name-and-stars .para {
-    color: black;
-    font-size: 15px;
-    font-size: 500;
-}
+
 
 .stars {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 2px;
+    float: right;
 
 }
 
@@ -326,11 +333,10 @@ html {
 
 .left-slider,
 .right-slider {
-    /* height: 100vh; */
-    /* Set a fixed height */
+
     overflow-x: hidden;
     display: flex;
-    /* Set a fixed width for the sliders */
+
 }
 
 .loops-slide-left {
@@ -384,13 +390,12 @@ html {
 
 .partners {
     width: 100%;
-
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: black;
     color: white;
-    /* Optional: To distinguish this section */
+
 }
 
 .partners-content {
@@ -1549,6 +1554,10 @@ TESTIMONIALS */
     transition: 0.5s ease;
 }
 
+.test-card-container .test-card p {
+    color: #666666;
+}
+
 .test-card-container .test-card:hover {
     box-shadow: none;
     background-color: white;
@@ -1631,9 +1640,7 @@ footer {
     }
 
     .home-content {
-
-        padding: 6rem 20px 0rem 20px;
-
+        padding: 1rem 10px 0rem 10px;
     }
 
     .home-content .home-left {
@@ -1682,7 +1689,7 @@ footer {
 
     .content-section {
         width: 100%;
-        padding: 0 20px;
+        padding: 0 10px;
         padding-top: 3rem;
         padding-bottom: 3rem;
     }
@@ -1695,26 +1702,24 @@ footer {
 
     .case-one-content {
 
-        padding: 3rem 20px;
+        padding: 3rem 10px;
 
     }
 
     .case-two-content {
 
-        padding: 3rem 20px;
+        padding: 3rem 10px;
 
     }
 
     .case-three-content {
 
-        padding: 3rem 20px;
+        padding: 3rem 10px;
 
     }
 
     .cta-btn .cta-content {
-
-        padding: 3rem 20px;
-
+        padding: 3rem 10px;
     }
 
     div#case-one-unvisible {
@@ -1769,14 +1774,18 @@ footer {
     }
 
     .last-card-section {
-
-        padding: 50px 20px;
-
+        padding: 50px 10px;
     }
 
 }
 
 @media (max-width:768px) {
+
+    .main-section {
+        padding: 0rem 0 0rem 0;
+
+    }
+
     .brand-section h1 {
         font-size: 1.5rem;
     }
@@ -1941,9 +1950,9 @@ footer {
         width: 142px;
     }
 
-    .visible-content .para {
+    /* .visible-content .para {
         margin: 1rem 0;
-    }
+    } */
 
     .case-one-unvisible,
     .case-two-unvisible,
@@ -1988,7 +1997,7 @@ footer {
     }
 
     .case-two-content {
-        padding: 0rem 20px;
+        padding: 0rem 10px;
     }
 
     .brand-logo {
@@ -2070,7 +2079,11 @@ footer {
     }
 
 
+    .home-content .home-left p {
 
+        font-size: 13px;
+
+    }
 
 
     .testimonials-content .content .reviews-left .para {
@@ -2126,8 +2139,7 @@ footer {
     .case-one-visible,
     .case-two-visible,
     .case-three-visible {
-        padding: 20px 6px;
-
+        padding: 20px 15px;
     }
 
     .case-one-visible .heading,
@@ -2207,7 +2219,7 @@ footer {
     }
 
     .four-test-content {
-        padding: 3rem 20px;
+        padding: 3rem 10px;
     }
 
     .three-card .three-text-content .three-card-desc {
@@ -2215,11 +2227,11 @@ footer {
     }
 
     .case-one-content {
-        padding: 3rem 20px 1rem 20px;
+        padding: 3rem 10px 1rem 10px;
     }
 
     .case-three-content {
-        padding: 1rem 20px 3rem 20px;
+        padding: 1rem 10px 3rem 10px;
     }
 }
 
