@@ -1465,9 +1465,10 @@ TESTIMONIALS */
 }
 
 .three-card h3.para {
-    font-size: 30px;
+    font-size: 26px;
     margin: 1rem 0;
-    font-weight: normal;
+    font-weight: 600;
+    line-height: 38px;
 }
 
 .three-card .para {
