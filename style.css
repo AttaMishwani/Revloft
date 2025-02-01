@@ -1850,7 +1850,7 @@ footer {
 
     .partners-content {
         padding: 0 20px;
-        padding-top: 5rem;
+        padding-top: 0rem;
     }
 
     .testimonials-content .content .reviews-left .para {
@@ -2016,9 +2016,27 @@ footer {
     }
 
     .test-card-container .test-card {
-
         width: 100%;
+        display: flex;
+        flex-direction: column;
 
+        justify-content: center;
+        align-items: center;
+    }
+
+    .test-card .profile .profile-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .test-card .profile {
+        margin-bottom: 1rem;
+    }
+
+    .test-card .profile .profile-name {
+        align-items: center;
     }
 
     .case-two-content {
