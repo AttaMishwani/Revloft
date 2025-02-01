@@ -1914,8 +1914,7 @@ footer {
     }
 
     .outer-before.before {
-        order: 3;
-
+        order: 1;
         width: 100%;
     }
 
@@ -1926,7 +1925,7 @@ footer {
     }
 
     .outer-after.after {
-        order: 1;
+        order: 3;
         width: 100%;
     }
 
@@ -2107,7 +2106,7 @@ footer {
 @media (max-width:480px) {
     .para {
 
-        font-size: 1rem;
+        font-size: 14px;
     }
 
     .heading {
