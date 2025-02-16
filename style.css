@@ -1542,11 +1542,16 @@ TESTIMONIALS */
     background-color: var(--dull-white);
     border-radius: 10px;
     padding: 40px;
+    min-height: 370px;
     width: 47%;
     border: 2px solid var(--blue-one);
     color: black !important;
     box-shadow: 0 0 10px rgba(148, 221, 224, 0.5);
     transition: 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
 }
 
 .test-card-container .test-card p {
@@ -2069,6 +2074,11 @@ footer {
 
     .testimonials-content .content .reviews-left .heading {
         white-space: pre-wrap;
+    }
+
+    .test-card-container .test-card p {
+
+        text-align: center;
     }
 
     .content-section .card img {
