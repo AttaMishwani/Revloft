@@ -253,7 +253,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 15px 30px;
+    padding: 25px 30px;
     border-radius: 10px;
     gap: 2rem;
     border: 2px solid var(--blue-one);
@@ -292,7 +292,7 @@ html {
     justify-content: space-between;
     align-items: center;
     color: #666666;
-    gap: 6rem;
+    gap: 2rem;
 }
 
 
@@ -2130,9 +2130,8 @@ footer {
 
 
     .home-content .home-left p {
-
         font-size: 13px;
-
+        text-align: center;
     }
 
 
@@ -2153,7 +2152,7 @@ footer {
     }
 
     .home-left .para {
-        margin-bottom: 37px;
+        margin-bottom: 0px;
     }
 
     .home-content .home-left .heading {
@@ -2268,7 +2267,7 @@ footer {
 
     .home-testimonial {
         width: 100%;
-
+        padding-bottom: 0;
     }
 
     .four-test-content {
